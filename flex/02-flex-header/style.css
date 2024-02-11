@@ -1,6 +1,33 @@
+/*added*/
+/*Toggle on flex for .header and ul to have content on one line*/
+ul,
+.header {
+  display: flex;
+}
+
+/*added*/
+/*Set flex properties for all the items of the flex containers*/
+li,
+.left-links,
+.right-links,
+.logo{
+  /*don't grow but shrink equally*/
+  flex: 0 1 auto;
+}
+
+/*added*/
+/*margin to space out li elements*/
+li{
+  margin: 0 4px;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /*added*/
+  padding: 8px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -14,6 +41,9 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /*added*/
+  padding-inline-start: 0;
+  margin-block: 0;
 }
 
 a {
