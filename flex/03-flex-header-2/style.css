@@ -12,6 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /*added*/
+  justify-content: space-between;
+  padding: 8px 0;
 }
 
 .profile-image {
@@ -45,4 +48,35 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+/*added*/
+/*make header, left-h, and right-h classes as well as ul flex containers*/
+.header,
+.left-h,
+.right-h,
+ul{
+  display:flex;
+}
+
+.left-h{
+  margin-left: 8px;
+  align-items: center;
+}
+
+.left-h > *,
+.right-h > *{
+  margin: 0 8px;
+}
+
+.right-h{
+  margin-right: 8px;
+}
+
+ul{
+  padding: 0;
+  margin-block: 0;
+}
+li{
+  margin: 4px;
 }
